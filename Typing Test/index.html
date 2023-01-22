@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Krymgold's Terrifically Terrible Typing Test</title>
+    <style>
+        *{
+            font-family: 'Roboto Mono', monospace;
+            color: cornflowerblue;
+        }
+        body, html{
+            height: 100%;
+            width: 100%;
+            margin: 0%;
+            background-color: rgb(245, 245, 245);
+        }
+        #Text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5em;
+            width: 80%;
+            height: 80%;
+
+        }
+        #Timer{
+            position: absolute;
+            top: 0%;
+            left: 1%;
+            /*transform: translate(-50%, -50%); */
+            font-size: 5em;
+            z-index: 3;
+        }
+        #modal{
+            background-color: pink;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            top: 50vh;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50%;
+            display: none;
+        }
+        .modal-content{
+            width: 80%;
+            margin-left: 10%;
+            
+            font-size: 5em;
+            /*transform: translate(-50%, 0%);*/
+
+        }
+        .modal-content > button{
+            background: none;
+            border: none;
+            position: absolute;
+            top: 90%;
+            transform: translate(0, -100%);
+            font-size: 1em;
+        }
+        .modal-content > button:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="Timer">30.000</div>
+    <div id="Text"></div>
+    <div id="modal">
+        <div class="modal-content">
+            <div id="WPM">WPM: </div>
+            <div id="Best">Best: </div>
+            <button onclick="location.reload()">Try Again</button>
+        </div>
+    </div>
+</body>
+<script src="jquery-3.6.1.js"></script>
+<script src="index.js"></script>
+</html>
