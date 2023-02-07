@@ -1,0 +1,3 @@
+cursor
+make fit to screen
+All Caps
